@@ -1,0 +1,21 @@
+<div class="d-flx flx-d-clm a-items-c">
+  <div class="page-container d-flx flx-d-clm a-items-c">
+
+    <p class='page-heading'>About Us</p>
+    <div class='info-container d-flx a-items-c'>
+      <div class="image-container">
+        <img src="assets/images/logo.png" class='image' alt="">
+      </div>
+      <div class="content">
+        {{aboutUs}}
+        <div class="initiatives">
+          <p *ngFor='let init of initiatives' class="initiative font-size-18">{{init}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flx j-cont-space-even width100">
+      <app-glass-counter class='counter' *ngFor='let item of stats' [count]='item.count' [title]='item.title'>
+      </app-glass-counter>
+    </div>
+  </div>
+</div>

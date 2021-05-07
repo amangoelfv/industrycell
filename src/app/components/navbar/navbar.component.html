@@ -1,0 +1,17 @@
+<div class="navbar-container d-flx j-cont-space-bet a-items-c">
+  <div class="home">
+    <img src="assets/images/logo.png" class='logo' />
+  </div>
+  <div class="menu d-flx">
+    <ng-container *ngFor="let item of navbarItems;index as i">
+      <div [ngClass]="{'active': activeIndex == i}" class="icon-cont d-flx" [routerLink]='item.route'>
+        <img [src]='item.icon' class='nav-icon'>
+        <div class="nav-label d-flx flx-d-clm j-cont-cen a-item-c">{{item.title}}</div>
+      </div>
+    </ng-container>
+
+  </div>
+  <div class="contact j-cont-cen d-flx" routerLink='connect'>
+    <p class='contact-us'>Connect with us!</p>
+  </div>
+</div>

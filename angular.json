@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "icell-nitkkr"
+  "defaultProject": "icell-nitkkr",
+  "cli": {
+    "analytics": false
+  }
 }

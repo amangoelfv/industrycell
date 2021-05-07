@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.color-primary {
+  color: #761ada;
+}
+.app-container {
+  width: 100%;
+  height: 100%;
+}
+
+.width100 {
+  width: 100%;
+}
+//FlexBox styles
+
+.d-flx {
+  display: flex;
+}
+
+.flx-d-clm {
+  flex-direction: column;
+}
+
+.flx-1 {
+  flex: 1;
+}
+.flx-wrap {
+  flex-wrap: wrap;
+}
+.j-cont-cen {
+  justify-content: center;
+}
+.j-cont-space-even {
+  justify-content: space-evenly;
+}
+.j-cont-space-bet {
+  justify-content: space-between;
+}
+.j-cont-end {
+  justify-content: flex-end;
+}
+.a-items-c {
+  align-items: center;
+}
+.a-items-end {
+  align-items: flex-end;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FOnt Related Styles
+.font-weight- {
+  &bold {
+    font-weight: 700;
+  }
+}
+.page-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 32px;
+}
+.font-size- {
+  &16 {
+    font-size: 16px;
+  }
+  &18 {
+    font-size: 18px;
+  }
+  &24 {
+    font-size: 24px;
+  }
+  &32 {
+    font-size: 32px;
+  }
+}
+
+.letter-spacing- {
+  &8 {
+    letter-spacing: 8px;
+  }
+}
+
+
+////////////////////////////////
+.fixed-screen {
+  height: calc(100vh - 60px);
+}
+.margin- {
+  &8 {
+    margin: 8px;
+    &-vertical {
+      margin: 8px 0;
+    }
+  }
+}
+.btn-primary {
+  background-color: #761ada;
+  transition: 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1);
+  }
+}

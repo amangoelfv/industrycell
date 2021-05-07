@@ -1,0 +1,14 @@
+<div class="fixed-screen d-flx flx-d-clm a-items-c ">
+  <p class="page-heading">Connect with Us</p>
+  <div class="social-icons-container d-flx j-cont-cen a-items-c">
+    <div class="letter-spacing-8 font-size-24">SOCIAL LINKS</div>
+    <img *ngFor='let icon of socialIcons' [src]='icon.icon' (click)='icon.clickFn()' class="social-icon">
+  </div>
+  <form [formGroup]="contactForm" class='d-flx flx-d-clm form-cont'>
+
+    <input type="text"  placeholder="Name" formControlName="name">
+    <input type="text" placeholder="Email" formControlName="email">
+    <textarea type="text" rows="6" placeholder="Message" formControlName="message"></textarea>
+    <div class='btn-primary' (click)='sendEmail()'>Submit</div>
+  </form>
+</div>

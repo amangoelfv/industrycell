@@ -1,0 +1,32 @@
+.social-icons-container {
+  position: absolute;
+  bottom: 16px;
+  right:16px;
+  .social-icon {
+    margin: 16px;
+    width: 48px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.form-cont {
+  width: 400px;
+  input, textarea {
+    padding: 16px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 12px;
+    color: black;
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn-primary {
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+  }
+}

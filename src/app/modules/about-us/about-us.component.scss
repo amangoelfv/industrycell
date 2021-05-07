@@ -1,0 +1,31 @@
+.page-container {
+  max-width: 1400px;
+
+}
+.info-container {
+  .image-container {
+    img {
+      width: 200px;
+      height: 100%;
+    }
+  }
+}
+
+.content {
+  .initiatives {
+    margin: 32px 0;
+    :nth-child(even) {
+      background: linear-gradient(to right, transparent 60%, #761ada 100%);
+    }
+    :nth-child(odd) {
+      background: linear-gradient(to left, transparent 60%, #761ada 100%);
+
+    }
+    .initiative {
+      padding: 8px;
+    }
+  }
+}
+.counter {
+  margin: 0 16px;
+}

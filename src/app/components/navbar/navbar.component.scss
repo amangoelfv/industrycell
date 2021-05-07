@@ -1,0 +1,59 @@
+*::selection {
+  color: black;
+}
+.navbar-container {
+  background-color: #761ada;
+  height: 60px;
+  padding: 0 16px;
+  .home {
+    padding: 16px 0;
+    .logo {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .menu {
+    transition: 0.7s ease-in;
+    .active {
+      border: 2px solid white;
+      border-radius: 24px;
+    }
+    .icon-cont {
+      margin: 0 8px;
+      padding: 0 16px;
+      cursor: pointer;
+      transition: 0.2s ease;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+      .nav-icon {
+        width: 24px;
+      }
+      .nav-label {
+        // background-color: white;
+        padding: 8px;
+        border-radius: 10px;
+        // position: absolute;
+        // display: none;
+      }
+    }
+  }
+  .contact {
+    height: 100%;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+      transform: scale(1.1);
+      color: black;
+    }
+    &:focus {
+      outline: none;
+    }
+    .contact-us {
+      cursor: pointer;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="app-container d-flx a-items-c flx-d-clm team-cont">
+<div class="page-heading">Our Team</div>
+<div class='d-flx flx-wrap j-items-space-bet flx-1'>
+  <div class="card-container" *ngFor='let member of teamMembers'>
+    <img [src]='member.imageUrl' class="member-image">
+    <div class="member-details a-items-end d-flx flx-d-clm margin-8">
+      <div class="name font-weight-bold font-size-24">{{member.name}}</div>
+      <div class="position">{{member.pos}}</div>
+      <div class="d-flx social-icons-container">
+        <img class='social-icon' src="assets/icons/linkedin.svg">
+        <img class='social-icon' src="assets/icons/email.svg">
+        <img class='social-icon' src="assets/icons/instagram.svg">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
